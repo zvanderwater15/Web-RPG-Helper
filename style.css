@@ -1,0 +1,40 @@
+.nope {
+	color: #8E8E91;
+}
+.yep {
+	color: black;
+}
+.chosen {
+	color: #FF0000;
+}
+.normal {
+	border: none;
+	background: none;
+}
+.slots {
+	width: 350px;
+	float: right;
+}
+.align {
+   text-align: center;
+}
+h1 {
+  font: 400 60px/1.3 'Bevan', Georgia, serif;
+  text-align: center;
+}
+h2 {
+  font: 400 32px/1.3 'Bevan', Georgia, serif;
+  text-align: center;
+}
+p {
+  font: 400 16px/1.6 'Pontano Sans', Verdana, Helvetica, sans-serif;
+  text-align: center;
+}
+button {
+  font: 400 16px/1.6 'Pontano Sans', Verdana, Helvetica, sans-serif;
+  text-align: center;
+}
+tr {
+  font: 400 16px/1.6 'Pontano Sans', Verdana, Helvetica, sans-serif;
+  text-align: center;
+}
