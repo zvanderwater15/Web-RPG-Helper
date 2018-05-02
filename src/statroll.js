@@ -1,25 +1,45 @@
-$(document).ready(function() {
+$(document).ready(function() 
+{
 	$(".nextRace").hide();
-	$("#roll").click(function() {
-		var stre = Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + 3;
-		$("#strength").append(stre);
-		sessionStorage.setItem("strengths", stre);
-		var dext = Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + 3;
-		$("#dex").append(dext);
-		sessionStorage.setItem("dexts", dext);
-		var inte = Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + 3;
-		$("#int").append(inte);
-		sessionStorage.setItem("ints", inte);
-		var wisd = Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + 3;
-		$("#wis").append(wisd);
-		sessionStorage.setItem("wisds", wisd);
-		var cons = Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + 3;
-		$("#con").append(cons);
-		sessionStorage.setItem("consts", cons);
-		var chari = Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + 3;
-		$("#cha").append(chari);
-		sessionStorage.setItem("chars", chari);
-		$("#roll").hide();
-		$(".nextRace").show();
-	});
+	
+	$("#roll").click(
+		function() 
+		{
+			//
+			var strength = roll();
+			var dex = roll();
+			var intel = roll();
+			var wis = roll();
+			var con = roll();
+			var cha = roll();
+			
+			//
+			$("#strength").append(strength);
+			$("#dex").append(dex);
+			$("#int").append(intel);
+			$("#wis").append(wis);
+			$("#con").append(con);
+			$("#cha").append(cha);
+			
+			//
+			sessionStorage.setItem("strength", strength);
+			sessionStorage.setItem("dex", dex);
+			sessionStorage.setItem("intel", intel);
+			sessionStorage.setItem("wis", wis);
+			sessionStorage.setItem("con", con);
+			sessionStorage.setItem("cha", cha);
+			
+			//
+			$("#roll").hide();
+			
+			//
+			$(".nextRace").show();
+		}
+	);
 }); 
+
+//
+function roll()
+{
+	return (Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + Math.floor((Math.random()) * 6) + 3);
+}

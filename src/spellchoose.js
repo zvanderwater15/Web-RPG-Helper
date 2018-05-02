@@ -1,4 +1,4 @@
-var charclass = sessionStorage.getItem('cclass');
+var charclass = sessionStorage.getItem('class');
 
 //determine how many spells can be chosen
 if (charclass == "mage"){ 
@@ -31,9 +31,12 @@ $(document).ready(function(){
 	if (inte == 18){
 		var limit = 18;
 	}
+	
 	$("#spell").append(limit);
+	
 	//select no more than what can be chosen
 	var spellslist = [];
+	
    $(':input').click(function(event) {
     	var count = 0;
       $(':input').each(function () {
@@ -50,7 +53,10 @@ $(document).ready(function(){
         }
       });
     });
+	 
+	//
 	$(".entername").click(function(){
 		sessionStorage.setItem("spells", spellslist); 
 	});
+	
 });
