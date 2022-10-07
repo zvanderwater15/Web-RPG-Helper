@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+	<link href="../../style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>Choosing Nonweapon Proficiencies</title>
+</head>
+<body>
+	<h1>Choose Nonweapon Proficiencies</h1>
+		<p id="nonweapon">Number of non-weapon proficiences you can select: </p>
+			<form name="nonweaponform">
+				<table width=80% id= "generic">
+					<h3>general</h3>
+					<tr>
+						<td><br></td>
+						<td><b>Proficiency</b></td>
+						<td><b> # of Slots Required</b></td>
+						<td><b> Relevant Ability</b></td>
+					</tr>
+					<tr>
+						<td>
+							<input type= "checkbox" id="Agriculture" name="Agriculture" value= "Agriculture">
+							<label for="Agriculture">
+								<td>Agriculture</td>
+								<td>1</td>
+								<td>Intelligence</td>
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="AnimalHandling" value= "Animal Handling"></td>
+						<td>Animal Handling</td>
+						<td>1</td>
+						<td>Wisdom</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="AnimalTraining" value= "Animal Training"></td>
+						<td>Animal Training</td>
+						<td>1</td>
+						<td>Wisdom</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="ArtisticAbility" value= "Artistic Ability"></td>
+						<td>Artistic Ability</td>
+						<td>1</td>
+						<td>Wisdom</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Blacksmithing" value= "Blacksmithing"></td>
+						<td>Blacksmithing</td>
+						<td>1</td>
+						<td>str</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Brewing" value= "Brewing"></td>
+						<td>Brewing</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Carpentry" value= "Carpentry"></td>
+						<td>Carpentry</td>
+						<td>1</td>
+						<td>str</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Cobbling" value= "Cobbling"></td>
+						<td>Cobbling</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Cooking" value= "Cooking"></td>
+						<td>Cooking</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Dancing" value= "Dancing"></td>
+						<td>Dancing</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="DirectionSense" value= "Direction Sense"></td>
+						<td>Direction Sense</td>
+						<td>1</td>
+						<td>Wisdom</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Etiquette" value= "Etiquette"></td>
+						<td>Etiquette</td>
+						<td>1</td>
+						<td>Charisma</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Fire-building" value= "Fire-building"></td>
+						<td>Fire-building</td>
+						<td>1</td>
+						<td>Wisdom</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Fishing" value= "Fishing"></td>
+						<td>Fishing</td>
+						<td>1</td>
+						<td>Wisdom</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Heraldry" value= "Heraldry"></td>
+						<td>Heraldry</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Languages,Modern" value= "Languages, Modern"></td>
+						<td>Languages, Modern</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Leatherworking" value= "Leatherworking"></td>
+						<td>Leatherworking</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Mining" value= "Mining"></td>
+						<td>Mining</td>
+						<td>2</td>
+						<td>Wisdom</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Pottery" value= "Pottery"></td>
+						<td>Pottery</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Riding,Airborne" value= "Riding, Airborne"></td>
+						<td>Riding, Airborne</td>
+						<td>2</td>
+						<td>Wisdom</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Riding,Land-based" value= "Riding, Land-based"></td>
+						<td>Riding, Land-based</td> 
+						<td>1</td>
+						<td>Wisdom</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="RopeUse" value= "Rope Use"></td>
+						<td>Rope Use</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Seamanship" value= "Seamanship"></td>
+						<td>Seamanship</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Seamstress/Tailor" value= "Seamstress/Tailor"></td>
+						<td>Seamstress/Tailor</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Singing" value= "Singing"></td>
+						<td>Singing</td>
+						<td>1</td>
+						<td>Charisma</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Stonemasonry" value= "Stonemasonry"></td>
+						<td>Stonemasonry</td>
+						<td>1</td>
+						<td>str</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Swimming" value= "Swimming"></td>
+						<td>Swimming</td>
+						<td>1</td>
+						<td>str</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="WeatherSense" value= "Weather Sense"></td>
+						<td>Weather Sense</td>
+						<td>1</td>
+						<td>Wisdom</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Weaving" value= "Weaving"></td>
+						<td>Weaving</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+				</table>
+				<table width=80% id="priests">
+					<h3>priest</h3>
+					<tr>
+						<td><br></td>
+						<td><b>Proficiency</b></td>
+						<td><b> # of Slots Required</b></td>
+						<td><b> Relevant Ability</b></td>
+					</tr>
+						<tr>
+							<td><input type= "checkbox" name="AncientHistory" value= "Ancient History"></td>
+							<td>Ancient History</td>
+							<td>1</td>
+							<td>Intelligence</td>
+						</tr>
+						<tr>
+							<td><input type= "checkbox" name="Astrology" value= "Astrology"></td>
+							<td>Astrology</td>
+							<td>2</td>
+							<td>Intelligence</td>
+						</tr>
+						<tr>
+							<td><input type= "checkbox" name="Engineering" value= "Engineering"></td>
+							<td>Engineering</td>
+							<td>2</td>
+							<td>Intelligence</td>
+						</tr>
+						<tr>
+							<td><input type= "checkbox" name="Healing" value= "Healing"></td>
+							<td>Healing</td>
+							<td>2</td>
+							<td>Wisdom</td>
+						</tr>
+						<tr>
+							<td><input type= "checkbox" name="Herbalism" value= "Herbalism"></td>
+							<td>Herbalism</td>
+							<td>2</td>
+							<td>Intelligence</td>
+						</tr>
+						<tr>
+							<td><input type= "checkbox" name="Languages,Ancient" value= "Languages, Ancient"></td>
+							<td>Languages, Ancient</td>
+							<td>1</td>
+							<td>Intelligence</td>
+						</tr>
+						<tr>
+							<td><input type= "checkbox" name="LocalHistory" value= "Local History"></td>
+							<td>Local History</td>
+							<td>1</td>
+							<td>Charisma</td>
+						</tr>
+						<tr>
+							<td><input type= "checkbox" name="MusicalInstrument" value= "Musical Instrument"></td>
+							<td>Musical Instrument</td>
+							<td>1</td>
+							<td>Dexterity</td>
+						</tr>
+						<tr>
+							<td><input type= "checkbox" name="Navigation" value= "Navigation"></td>
+							<td>Navigation</td>
+							<td>1</td>
+							<td>Intelligence</td>
+						</tr>
+						<tr>
+							<td><input type= "checkbox" name="Reading/Writing" value= "Reading/Writing"></td>
+							<td>Reading/Writing</td>
+							<td>1</td>
+							<td>Intelligence</td>
+						</tr>
+						<tr>
+							<td><input type= "checkbox" name="Religion" value= "Religion"></td>
+							<td>Religion</td>
+							<td>1</td>
+							<td>Wisdom</td>
+						</tr>
+						<tr>
+							<td><input type= "checkbox" name="Spellcraft" value= "Spellcraft"></td>
+							<td>Spellcraft</td>
+							<td>1</td>
+							<td>Intelligence</td>
+						</tr>
+						</table>
+			<table width=80% id="rogues">
+				<h3>rogue</h3>
+				    <tr>
+						<td><br></td>
+						<td><b>Proficiency</b></td>
+						<td><b> # of Slots Required</b></td>
+						<td><b> Relevant Ability</b></td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="AncientHistory" value= "Ancient History"></td>
+						<td>Ancient History</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Appraising" value= "Appraising"></td>
+						<td>Appraising</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Blind-fighting" value= "Blind-fighting"></td>
+						<td>Blind-fighting</td>
+						<td>2</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Disguise" value= "Disguise"></td>
+						<td>Disguise</td>
+						<td>1</td>
+						<td>Charisma</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Forgery" value= "Forgery"></td>
+						<td>Forgery</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Gaming" value= "Gaming"></td>
+						<td>Gaming</td>
+						<td>1</td>
+						<td>Charisma</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="GemCutting" value= "Gem Cutting"></td>
+						<td>Gem Cutting</td>
+						<td>2</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Juggling" value= "Juggling"></td>
+						<td>Juggling</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name= "Jumping" value= "Jumping"></td>
+						<td>Jumping</td>
+						<td>1</td>
+						<td>str</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="LocalHistory" value= "Local History"></td>
+						<td>Local History</td>
+						<td>1</td>
+						<td>Charisma</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="MusicalInstrument" value= "Musical Instrument"></td>
+						<td>Musical Instrument</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="ReadingLips" value= "Reading Lips"></td>
+						<td>Reading Lips</td>
+						<td>2</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="SetSnares" value= "Set Snares"></td>
+						<td>Set Snares</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="TightropeWalking" value= "Tightrope Walking"></td>
+						<td>Tightrope Walking</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Tumbling" value= "Tumbling"></td>
+						<td>Tumbling</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Ventriloquism" value= "Ventriloquism"></td>
+						<td>Ventriloquism</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+			</table>
+			<table width=80% id="warriors">
+				<h3>warrior</h3>
+				<tr>
+						<td><br></td>
+						<td><b>Proficiency</b></td>
+						<td><b> # of Slots Required</b></td>
+						<td><b> Relevant Ability</b></td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="AnimalLore" value= "Animal Lore"></td>
+						<td>Animal Lore</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Armorer" value= "Armorer"></td>
+						<td>Armorer</td>
+						<td>2</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Blind-fighting" value= "Blind-fighting"></td>
+						<td>Blind-fighting</td>
+						<td>2</td>
+						<td>NA</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Bowyer/Fletcher" value= "Bowyer/Fletcher"></td>
+						<td>Bowyer/Fletcher</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Charioteering" value= "Charioteering"></td>
+						<td>Charioteering</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Endurance" value= "Endurance"></td>
+						<td>Endurance</td>
+						<td>2</td>
+						<td>Constitution</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Gaming" value= "Gaming"></td>
+						<td>Gaming</td>
+						<td>1</td>
+						<td>Charisma</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Hunting" value= "Hunting"></td>
+						<td>Hunting</td>
+						<td>1</td>
+						<td>Wisdom</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Mountaineering" value= "Mountaineering"></td>
+						<td>Mountaineering</td>
+						<td>1</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Navigation" value= "Navigation"></td>
+						<td>Navigation</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Running" value= "Running"></td>
+						<td>Running</td>
+						<td>1</td>
+						<td>Constitution</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Set Snare" value= "Set Snare"></td>
+						<td>Set Snare</td>
+						<td>1</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Survival" value= "Survival"></td>
+						<td>Survival</td>
+						<td>2</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Tracking" value= "Tracking"></td>
+						<td>Tracking</td>
+						<td>2</td>
+						<td>Wisdom</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Weaponsmithing" value= "Weaponsmithing"></td>
+						<td>Weaponsmithing</td>
+						<td>3</td>
+						<td>Intelligence</td>
+					</tr>
+			</table>
+		
+			<table width=80% id="wizards">
+			    <h3>wizard</h3>
+				<tr>
+						<td><br></td>
+						<td><b>Proficiency</b></td>
+						<td><b> # of Slots Required</b></td>
+						<td><b> Relevant Ability</b></td>
+					</tr>
+			<tr>
+						<td><input type= "checkbox" name="AncientHistory" value= "Ancient History"></td>
+						<td>Ancient History</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Astrology" value= "Astrology"></td>
+						<td>Astrology</td>
+						<td>2</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Engineering" value= "Engineering"></td>
+						<td>Engineering</td>
+						<td>2</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="GemCutting" value= "Gem Cutting"></td>
+						<td>Gem Cutting</td>
+						<td>2</td>
+						<td>Dexterity</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Herbalism" value= "Herbalism"></td>
+						<td>Herbalism</td>
+						<td>2</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Languages,Ancient" value= "Languages, Ancient"></td>
+						<td>Languages, Ancient</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Navigation" value= "Navigation"></td>
+						<td>Navigation</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Reading/Writing" value= "Reading/Writing"></td>
+						<td>Reading/Writing</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Religion" value= "Religion"></td>
+						<td>Religion</td>
+						<td>1</td>
+						<td>Wisdom</td>
+					</tr>
+					<tr>
+						<td><input type= "checkbox" name="Spellcraft" value= "Spellcraft"></td>
+						<td>Spellcraft</td>
+						<td>1</td>
+						<td>Intelligence</td>
+					</tr>
+				</table>
+			</form>
+		<div class="align"><a href="spells.htm"><button id="spells" class="btn"> Next </button></a>
+		<div class="align"><a href="background.htm"><button id="background" class="btn">Next</button></a></div>
+		<script src="../../js/nwprofchoose.js"></script>
+</body>

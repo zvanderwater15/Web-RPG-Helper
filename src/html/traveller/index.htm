@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Planet Creation</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+    <link href="../../style.css" rel="stylesheet" />
+    <link href="../../css/planet.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>TTRPG HELPER</h1>
+    </header>
+    <script src="../../js/planet.js"></script>
+    <div class="window">
+      <div class="title-bar">
+        <h2 class="title">Traveller Planet Generator</h2>
+      </div>
+      <div class="window-pane">
+        <dl>
+          <dt>Name:</dt>
+          <dd id="name"><input type="text" placeholder="Enter a Name" /></dd>
+          <dt>Size:</dt>
+          <dd id="size"></dd>
+          <dt>Atmosphere:</dt>
+          <dd id="atm"></dd>
+          <dt>Temperature:</dt>
+          <dd id="temp"></dd>
+          <dt>Hydrographics:</dt>
+          <dd id="hydro"></dd>
+          <dt>Population:</dt>
+          <dd id="pop"></dd>
+          <dt>Government type:</dt>
+          <dd id="gov"></dd>
+          <dt>Factions:</dt>
+          <dd id="factions"></dd>
+          <dt>Law level:</dt>
+          <dd id="law"></dd>
+          <dt>Cultural differences:</dt>
+          <dd id="cult"></dd>
+          <dt>Starport Class:</dt>
+          <dd id="star"></dd>
+          <dt>Technology Level:</dt>
+          <dd id="listtl"></dd>
+        </dl>
+      </div>
+      <div>
+      </div>
+      <div class="actions">
+        <button id="roll" class="btn">Roll</button>
+      </div>
+    </div>
+  </body>
+</html>
